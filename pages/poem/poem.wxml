@@ -1,0 +1,15 @@
+<!--pages/poem/poem.wxml-->
+<view class="poem-background"></view>
+<view class="poem">
+  <text class="poem-center title">《{{poem.title.english}}》</text>
+  <text class="poem-center title chinese-title">《{{poem.title.chinese}}》</text>
+  <video id="myVideo" src="{{poem.video}}" binderror="videoErrorCallback" controls></video>
+  <view class="scroll">
+    <view class="poem-center">
+      <view wx:for="{{poem.content}}" class="center">
+        <view class="original-text" id="{{index}}">{{item.english}}</view>
+        <view class="original-text chinese" id="{{index}}">{{item.chinese}}</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<!--index/index.wxml-->
+<view class="background"></view>
+<view class="chapter">
+  <text class="title">{{chapter.title}}</text>
+  <view class="chapter-center chapter scroll">
+    <view wx:for="{{poems}}" class="center">
+      <text class="poem-list" id="{{index}}" bindtap="loadPoem"><text class="num">{{index + 1}}.</text>   {{item.title.english}}</text>
+      <!-- <hr class='dotted' /> -->
+      <text class="poem-list highlight" id="{{index}}" bindtap="loadPoem">      {{item.title.chinese}}</text>
+    </view>
+  </view>
+</view>

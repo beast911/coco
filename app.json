@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/poem/poem"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#C4B184",
+    "navigationBarTitleText": "Coco英语童谣",
+    "navigationBarTextStyle": "white"
+  },
+  "cloud": true,
+  "sitemapLocation": "sitemap.json"
+}
